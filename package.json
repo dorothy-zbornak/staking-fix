@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "bignumber.js": "^9.0.1",
+        "colors": "^1.4.0",
+        "flex-contract": "^2.3.2",
+        "flex-ether": "^1.9.1",
+        "solc": "^0.8.4",
+        "soluble": "^1.1.1",
+        "yargs": "^17.0.0"
+    },
+    "scripts": {
+        "compile": "soluble compile contracts/**.sol -O build"
+    }
+}

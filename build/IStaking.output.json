@@ -1,0 +1,197 @@
+{
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_stakingContract",
+					"type": "address"
+				}
+			],
+			"name": "attachStakingContract",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "poolId",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "address",
+					"name": "member",
+					"type": "address"
+				}
+			],
+			"name": "computeRewardBalanceOfDelegator",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "reward",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "poolId",
+					"type": "bytes32"
+				}
+			],
+			"name": "computeRewardBalanceOfOperator",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "reward",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "currentEpoch",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "endEpoch",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "poolId",
+					"type": "bytes32"
+				}
+			],
+			"name": "finalizePool",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "operatorReward",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "membersReward",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "enum IStaking.StakeStatus",
+					"name": "stakeStatus",
+					"type": "uint8"
+				}
+			],
+			"name": "getGlobalStakeByStatus",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint64",
+							"name": "currentEpoch",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint96",
+							"name": "currentEpochBalance",
+							"type": "uint96"
+						},
+						{
+							"internalType": "uint96",
+							"name": "nextEpochBalance",
+							"type": "uint96"
+						}
+					],
+					"internalType": "struct IStaking.StoredBalance",
+					"name": "balance",
+					"type": "tuple"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "poolId",
+					"type": "bytes32"
+				}
+			],
+			"name": "getStakingPoolStatsThisEpoch",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "feesCollected",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "weightedStake",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "membersStake",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct IStaking.PoolStats",
+					"name": "",
+					"type": "tuple"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "lastPoolId",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	],
+	"bytecode": "0x",
+	"deployedBytecode": "0x"
+}
